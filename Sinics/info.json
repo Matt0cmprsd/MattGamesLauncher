@@ -1,0 +1,8 @@
+{
+  "name": "Sinics",
+  "version": "4.2",
+  "plateforme": "windows",
+  "appareils": "cs",
+  "dds": "08/08/2026"
+  "executable": "Sinics.exe"
+}
