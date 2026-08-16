@@ -4,161 +4,89 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Launcher — Matt Games</title>
-<meta name="description" content="Téléchargez le Matt Games Launcher pour Windows. Version 1.0.">
-<link rel="icon" type="image/png" href="LogoLauncher.png">
+<link rel="icon" href="images/LogoMattGames.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav class="nav">
-  <div class="wrap">
+<header class="topbar">
+  <div class="topbar-inner">
     <a href="index.html" class="brand">
-      <img src="LogoLauncher.png" alt="Matt Games">
-      <span>Matt Games</span>
+      <img src="images/LogoMattGames.png" alt="Matt Games">
+      <span class="brand-name">MATT GAMES</span>
     </a>
-    <div class="nav-links">
+    <nav class="nav">
       <a href="index.html">Accueil</a>
       <a href="jeux.html">Jeux</a>
       <a href="launcher.html" class="active">Launcher</a>
-    </div>
-    <a href="launcher.html" class="nav-cta">Télécharger</a>
-    <button class="nav-toggle" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-
-<header class="dl-header">
-  <div class="wrap">
-    <span class="eyebrow"><span class="dot"></span>Version 1.0 · Windows</span>
-    <h1>Matt Games Launcher</h1>
-    <p class="lead">Une bibliothèque pour Sinics et House Simulator, des mises à jour simples, rien de superflu.</p>
+    </nav>
+    <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
   </div>
 </header>
 
-<section>
-  <div class="wrap">
-    <div class="mock" aria-hidden="true">
-      <div class="mock-bar">
-        <span class="mock-dot"></span>
-        <span class="mock-dot"></span>
-        <span class="mock-dot"></span>
-        <span class="mock-title">Matt Games Launcher</span>
+<main>
+
+  <section class="launcher-hero wrap">
+    <div>
+      <span class="eyebrow">Matt Games Launcher</span>
+      <h1>Un seul launcher pour tout le catalogue</h1>
+      <p class="hero-sub" style="max-width: 460px;">
+        Installez, mettez à jour et lancez chaque jeu Matt Games depuis
+        une interface unique. Aucune plateforme tierce requise.
+      </p>
+      <div class="hero-actions">
+        <a href="#telecharger" class="btn btn-primary">Télécharger</a>
       </div>
-      <div class="mock-body">
-        <div class="mock-side">
-          <div class="tile sinics"></div>
-          <div class="tile house"></div>
-          <div class="tile"></div>
+    </div>
+    <div class="launcher-visual">
+      <img src="images/launcher-capture.png" alt="Interface du Matt Games Launcher">
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Fonctionnalités</span>
+        <h2>Ce que fait le launcher</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature">
+          <span class="tag">01</span>
+          <h3>Bibliothèque unique</h3>
+          <p>Tous les jeux du studio réunis dans une même interface, mise à jour automatiquement.</p>
         </div>
-        <div class="mock-main">
-          <div class="mock-hero">Continuer la partie</div>
-          <div class="mock-grid">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-          </div>
+        <div class="feature">
+          <span class="tag">02</span>
+          <h3>Installation en un clic</h3>
+          <p>Le jeu sélectionné est téléchargé et installé directement, sans étape supplémentaire.</p>
+        </div>
+        <div class="feature">
+          <span class="tag">03</span>
+          <h3>Mises à jour automatiques</h3>
+          <p>Le launcher détecte les nouvelles versions et propose la mise à jour dès qu'elle est disponible.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="tight">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">Fonctionnalités</span>
-      <h2>Pensé pour aller droit au but</h2>
+  <section class="download-cta" id="telecharger">
+    <div class="wrap">
+      <span class="eyebrow">Windows</span>
+      <h2>Télécharger le Matt Games Launcher</h2>
+      <p>Dernière version disponible pour Windows.</p>
+      <a href="#" class="btn btn-primary">Télécharger pour Windows</a>
+      <p class="download-meta">Version de test — lien à mettre à jour avant mise en ligne.</p>
     </div>
-    <div class="features">
-      <div class="feature-card">
-        <span class="feature-num">01</span>
-        <h3>Bibliothèque unifiée</h3>
-        <p>Sinics et House Simulator réunis dans une seule grille.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-num">02</span>
-        <h3>Mises à jour simples</h3>
-        <p>Le launcher prévient quand une mise à jour est là ; vous l'installez quand vous voulez.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-num">03</span>
-        <h3>Léger et rapide</h3>
-        <p>Moins de 60 Mo de RAM au repos, aucun ralentissement en arrière-plan.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="tight">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">Téléchargement</span>
-      <h2>Télécharger</h2>
-    </div>
-    <div class="download-panel">
-      <div class="os-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-bright)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"></rect><path d="M8 21h8M12 17v4"></path></svg>
-      </div>
-      <div class="info">
-        <h3>Matt Games Launcher pour Windows</h3>
-        <div class="os-specs">
-          <span><b>10 / 11</b>64 bits</span>
-          <span><b>74 Mo</b>Taille</span>
-          <span><b>1.0</b>Version</span>
-        </div>
-        <a href="#" class="btn btn-primary" download>Télécharger pour Windows</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="requirements" class="tight">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">Avant d'installer</span>
-      <h2>Configuration requise</h2>
-    </div>
-    <div class="requirements">
-      <table class="req-table">
-        <tr><td>Système</td><td>Windows 10 64 bits ou plus récent</td></tr>
-        <tr><td>Processeur</td><td>Dual-core 2 GHz</td></tr>
-        <tr><td>Mémoire</td><td>4 Go de RAM</td></tr>
-        <tr><td>Espace disque</td><td>250 Mo disponibles, hors jeux installés</td></tr>
-        <tr><td>Réseau</td><td>Connexion internet requise pour les mises à jour</td></tr>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section class="tight">
-  <div class="wrap">
-    <div class="verify">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"></path><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"></path></svg>
-      <div>
-        <h3>Vérifiez votre téléchargement</h3>
-        <p>Somme de contrôle SHA-256 pour la version 1.0&nbsp;: <code>à renseigner après mise en ligne</code></p>
-      </div>
-    </div>
-  </div>
-</section>
+</main>
 
 <footer>
-  <div class="wrap">
-    <div class="footer-row">
-      <a href="index.html" class="footer-brand">
-        <img src="LogoLauncher.png" alt="">
-        Matt Games
-      </a>
-      <div class="footer-links">
-        <a href="index.html">Accueil</a>
-        <a href="jeux.html">Jeux</a>
-        <a href="launcher.html">Launcher</a>
-      </div>
-    </div>
-    <p class="footer-note">© 2026 Matt Games. Lien de téléchargement à remplacer.</p>
+  <div class="wrap footer-inner">
+    <span class="brand-name">MATT GAMES</span>
+    <span>© 2024 Matt Games. Tous droits réservés.</span>
   </div>
 </footer>
 
