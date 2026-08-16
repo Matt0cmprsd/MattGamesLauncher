@@ -4,5 +4,6 @@
   "plateforme": "windows",
   "appareils": ["cs"],
   "dds": "08/08/2026",
-  "executable": "Sinics.exe"
+  "executable": "Sinics.exe",
+  "download_url": "https://github.com/matt0cmprsd/MattGamesLauncher/releases/download/4.2/Sinics.zip"
 }
