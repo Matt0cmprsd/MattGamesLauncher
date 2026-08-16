@@ -1,7 +1,4 @@
-// Matt Games Launcher — interactions
-
 document.addEventListener("DOMContentLoaded", () => {
-  // Mobile nav toggle
   const toggle = document.querySelector(".nav-toggle");
   const links = document.querySelector(".nav-links");
   if (toggle && links) {
@@ -16,8 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
       links.style.background = "var(--bg)";
       links.style.borderBottom = "1px solid var(--border)";
       links.style.padding = "16px 32px";
-      links.style.gap = "16px";
+      links.style.gap = "4px";
     });
   }
 
+  if (location.hash) {
+    const target = document.querySelector(location.hash);
+    if (target && target.tagName === "DETAILS") {
+      target.open = true;
+      target.scrollIntoView({ block: "start" });
+    }
+  }
 });
