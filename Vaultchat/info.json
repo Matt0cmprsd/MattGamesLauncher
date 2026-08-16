@@ -1,0 +1,9 @@
+{
+  "name": "Vaultchat",
+  "version": "1",
+  "plateforme": "windows",
+  "appareils": ["cs"],
+  "dds": "16/08/2026",
+  "executable": "VaultChat.exe",
+  "download_url": "https://github.com/Matt0cmprsd/MattGamesLauncher/releases/download/vaultchat1/Vaultchat.zip"
+}
