@@ -3,101 +3,85 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Matt Games — Accueil</title>
-<meta name="description" content="Matt Games : studio indépendant. Deux jeux, un launcher.">
-<link rel="icon" type="image/png" href="LogoLauncher.png">
+<title>Matt Games — Home</title>
+<link rel="icon" href="images/LogoMattGames.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav class="nav">
-  <div class="wrap">
+<header class="topbar">
+  <div class="topbar-inner">
     <a href="index.html" class="brand">
-      <img src="LogoLauncher.png" alt="Matt Games">
-      <span>Matt Games</span>
+      <img src="images/LogoMattGames.png" alt="Matt Games">
+      <span class="brand-name">MATT GAMES</span>
     </a>
-    <div class="nav-links">
+    <nav class="nav">
       <a href="index.html" class="active">Accueil</a>
       <a href="jeux.html">Jeux</a>
       <a href="launcher.html">Launcher</a>
-    </div>
-    <a href="launcher.html" class="nav-cta">Télécharger</a>
-    <button class="nav-toggle" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="wrap">
-    <span class="eyebrow"><span class="dot"></span>Studio indépendant</span>
-    <h1>Matt Games</h1>
-    <p class="lead">Deux jeux, un launcher, aucun superflu. Matt Games conçoit ses jeux et les distribue via son propre launcher, sans compte ni détour.</p>
-    <div class="hero-actions">
-      <a href="launcher.html" class="btn btn-primary">Télécharger le launcher</a>
-      <a href="jeux.html" class="btn btn-ghost">Voir les jeux</a>
-    </div>
+    </nav>
+    <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
   </div>
 </header>
 
-<section>
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker">Catalogue</span>
-      <h2>Nos jeux</h2>
-      <p>Deux jeux, deux univers différents. Les deux se lancent depuis le Matt Games Launcher.</p>
-    </div>
+<main>
 
-    <div class="game-strip">
-      <a href="jeux.html#sinics" class="game-preview" style="--game-color: var(--sinics);">
-        <img src="Logos/Sinics.png" alt="Sinics">
-        <div>
-          <span class="tag">Version 4.2</span>
-          <h3>Sinics</h3>
-          <p>Stratégie — chaque décision modifie l'équilibre du système.</p>
-        </div>
-      </a>
-
-      <a href="jeux.html#house-simulator" class="game-preview" style="--game-color: var(--house);">
-        <img src="Logos/HouseSimulator.png" alt="House Simulator">
-        <div>
-          <span class="tag">Bêta</span>
-          <h3>House Simulator</h3>
-          <p>Simulation — construisez et gérez une maison, sans chronomètre.</p>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="tight">
-  <div class="wrap">
-    <div class="launcher-teaser">
-      <div>
-        <h2>Le launcher</h2>
-        <p>Une bibliothèque, des mises à jour simples, rien de superflu. Version 1.0 disponible pour Windows.</p>
+  <section class="hero">
+    <img src="images/presentation.png" alt="Matt Games">
+    <div class="hero-content">
+      <span class="eyebrow">Studio indépendant — depuis 2024</span>
+      <h1 class="hero-title">Matt Games</h1>
+      <p class="hero-sub">
+        Un studio qui conçoit ses jeux et l'outil pour y jouer. Le Matt Games
+        Launcher réunit nos titres, leurs mises à jour et leur installation
+        en un seul endroit.
+      </p>
+      <div class="hero-actions">
+        <a href="launcher.html" class="btn btn-primary">Télécharger le launcher</a>
+        <a href="jeux.html" class="btn btn-ghost">Voir les jeux</a>
       </div>
-      <a href="launcher.html" class="btn btn-primary">Télécharger maintenant</a>
     </div>
-  </div>
-</section>
+  </section>
+
+  <section class="section-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Le studio</span>
+        <h2>Deux jeux, un seul launcher</h2>
+        <p>
+          Matt Games développe ses titres en interne et les distribue via
+          un launcher dédié : installation, mises à jour et lancement,
+          sans passer par une plateforme tierce.
+        </p>
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <span class="num">01</span>
+          <h3>Jeux</h3>
+          <p>Des titres développés et maintenus par le studio, présentés sur la page Jeux.</p>
+        </div>
+        <div class="pillar">
+          <span class="num">02</span>
+          <h3>Launcher</h3>
+          <p>Un point d'entrée unique pour installer, mettre à jour et lancer chaque jeu du catalogue.</p>
+        </div>
+        <div class="pillar">
+          <span class="num">03</span>
+          <h3>Mises à jour</h3>
+          <p>Chaque jeu est suivi et mis à jour directement depuis le launcher, sans manipulation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
 
 <footer>
-  <div class="wrap">
-    <div class="footer-row">
-      <a href="index.html" class="footer-brand">
-        <img src="LogoLauncher.png" alt="">
-        Matt Games
-      </a>
-      <div class="footer-links">
-        <a href="index.html">Accueil</a>
-        <a href="jeux.html">Jeux</a>
-        <a href="launcher.html">Launcher</a>
-      </div>
-    </div>
-    <p class="footer-note">© 2026 Matt Games.</p>
+  <div class="wrap footer-inner">
+    <span class="brand-name">MATT GAMES</span>
+    <span>© 2024 Matt Games. Tous droits réservés.</span>
   </div>
 </footer>
 
