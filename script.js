@@ -1,27 +1,13 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.querySelector(".nav-toggle");
-  const links = document.querySelector(".nav-links");
-  if (toggle && links) {
-    toggle.addEventListener("click", () => {
-      const open = links.style.display === "flex";
-      links.style.display = open ? "none" : "flex";
-      links.style.flexDirection = "column";
-      links.style.position = "absolute";
-      links.style.top = "76px";
-      links.style.left = "0";
-      links.style.right = "0";
-      links.style.background = "var(--bg)";
-      links.style.borderBottom = "1px solid var(--border)";
-      links.style.padding = "16px 32px";
-      links.style.gap = "4px";
-    });
-  }
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (!toggle || !nav) return;
 
-  if (location.hash) {
-    const target = document.querySelector(location.hash);
-    if (target && target.tagName === "DETAILS") {
-      target.open = true;
-      target.scrollIntoView({ block: "start" });
-    }
-  }
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => nav.classList.remove('open'));
+  });
 });
