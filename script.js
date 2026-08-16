@@ -20,16 +20,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Requirements tabs (download page)
-  const tabs = document.querySelectorAll(".req-tab");
-  const panels = document.querySelectorAll(".req-panel");
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      tabs.forEach((t) => t.classList.remove("active"));
-      panels.forEach((p) => p.classList.remove("active"));
-      tab.classList.add("active");
-      const target = document.querySelector(`.req-panel[data-panel="${tab.dataset.tab}"]`);
-      if (target) target.classList.add("active");
-    });
-  });
 });
