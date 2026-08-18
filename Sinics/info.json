@@ -7,5 +7,5 @@
   "executable": "Sinics.exe",
   "description": "Sinics est une application qui permet d'importer sa musique en local trier par artistes, albums, et singles !",
   "download_url": "https://github.com/Matt0cmprsd/MattGamesLauncher/releases/download/Sinics4.2/Sinics.zip",
-  "screens": []
+  "screens": ["screen1.png", "screen2.png", "screen3.png", "screen4.png"]
 }
