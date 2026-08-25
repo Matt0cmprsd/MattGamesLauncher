@@ -6,6 +6,6 @@
   "dds": "08/08/2026",
   "executable": "SinicsLite.exe",
   "description": "Sinics est une application qui permet d'importer sa musique en local trier par artistes, albums, et singles ! Cette version est déstiné pour les configurations moins puissantes avec un moteur de rendu différent et quelques fonctionnalités en moins",
-  "download_url": "",
+  "download_url": "https://github.com/Matt0cmprsd/MattGamesLauncher/releases/download/SinicsLite1.0/SinicsLite.zip",
   "screens": ["screen1.png", "screen2.png", "screen3.png", "screen4.png"]
 }
